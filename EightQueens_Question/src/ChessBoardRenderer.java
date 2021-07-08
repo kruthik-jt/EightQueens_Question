@@ -3,6 +3,13 @@ public class ChessBoardRenderer {
 
 		// WRITE YOUR LOGIC HERE...
 		System.out.println(square);
-		return true;
+		float sq_num=square%8;
+		if(((square-sq_num)/8)%2==1 && sq_num%2==0)
+			return true;
+		else if(((square-sq_num)/8)%2==0 && sq_num%2==1)
+			return true;
+		else
+			return false;
+			
 	}
 }
